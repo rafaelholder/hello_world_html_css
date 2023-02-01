@@ -1,0 +1,46 @@
+/*	
+	Resumo de FlexBox:
+
+	display:flex;-iniciaoflexnocontainer
+	flex-grow-datamanhoaoelementopreenchendoosespaçosvazios
+	flex-shrink-ocontráriodogrow
+	flex-basis-tamanhoinicialdoelemento,eorestoépreenchidopelogrow
+	flex-<grow><shrink><basis>
+	flex-direction-mudaadireçãoqueoselementosestão(row,column)
+	flex-order-mudaaordemdoelementoindivualmente
+	justify-content-alinhaoselementosnoeixoprincipal,eixox,horizontal
+	align-items-alinhaoselementosnoeixosecundário,eixoy,vertical
+	align-self-alinhaoelementoemparticular
+*/
+
+.container_flexbox{
+height:400px;
+width:100%;
+display: flex;
+flex-direction:row-reverse;
+justify-content:space-around;
+align-items:center;
+background-color:white;
+}
+
+.flexbox{
+width:100px;
+height:100px;
+/*flex:11300px;Shorthand*/
+	/*flex:<grow><shrink><basis>;*/
+}
+
+.first{
+background-color:blue;
+
+}
+.second{
+background-color:green;
+align-self:flex-start;
+
+}
+.third{
+background-color:red;
+align-self:flex-end;
+
+}

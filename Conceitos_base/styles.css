@@ -1,0 +1,243 @@
+@keyframes animation {
+    from {background-color: aqua;}
+    to {background-color: red;}
+}
+@keyframes animation-second{
+    0% {left: 0;}
+    10% {width: 60px;}
+    33% {width: 120px;}
+    60% {background-color: rebeccapurple;}
+    80% {left: 100px; background-color: brown;}
+    90% {left: 100px;}
+    100% {height: 100px; left: 0;}
+}
+@keyframes animation-third {
+    from {left: 0;}
+    to {left: 200px; background-color: greenyellow;}
+}
+@keyframes animation-4 {
+    from{left: 0;}
+    to{left: 500px;}
+}
+@keyframes animation-5 {
+    0% {left: 0; right: 0;}
+    25% {left: 20px; background-color: blueviolet; }
+    50% {left: 100px; background-color: orangered;}
+    75% {left: 50px; background-color: yellow;}
+    100% {left: 20px; background-color: pink;}
+}   
+
+body {
+    background-color: #ddd;
+}
+.animation-div {
+    width:100px;
+    height: 100px;
+    background-color: aqua;
+    animation-name: animation;
+    animation-duration: 6s;
+    animation-iteration-count: 100;
+
+}
+
+.animation-div-second {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    animation-name: animation-second;
+    animation-duration: 12s;
+    animation-iteration-count: 1;
+    position: relative;
+}
+
+.animation-div-third {
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    position: relative;
+    animation-name: animation-third;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-iteration-count: 100;
+}
+
+/* Timing function */
+.box{
+    background-color: olivedrab;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    animation-name: animation-4;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+#animation-div4{
+    animation-timing-function: linear;
+}
+
+#animation-div5{
+    animation-timing-function: ease;
+}
+
+#animation-div6{
+    animation-timing-function: ease-in;
+}
+
+#animation-div7{
+    animation-timing-function: ease-out;
+}
+
+#animation-div8{
+    animation-timing-function: ease-in-out;
+}
+
+/* Shorthand - none, duration, timing-function, delay, iteration*/
+#animation-div9{
+    background-color: darkblue;
+    color: whitesmoke;
+    width: 70px;
+    height: 50px;
+    /* Shorthand - name, duration, timing-function, delay, iteration*/
+    animation: animation-5 8s ease-out 2s infinite;
+}
+
+/* Transition */
+.btn {
+    display: block;
+    position: relative;
+    padding: 10px;
+    margin: 25px;
+    width: 150px;
+    height: 75px;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #333;
+    border: 1px solid #111;
+    cursor: pointer;
+    transition: 1s;
+}
+.btn:hover{
+    color: #333;
+    background-color: #fff;
+}
+.transition {
+    width: 50px;
+    height: 100px;
+    background-color: royalblue;
+    transition: 4s;
+}
+.transition:hover {
+    width: 300px;
+}
+
+/* Using calc in CSS */
+.div-calc {
+    height: 250px;
+    width: 500px;
+    position: relative;
+    margin: 20px;
+    color: wheat;
+    background-color: #ddd;
+    border: 1px solid lightblue;
+}
+
+.innerdiv-calc {
+    height: 50px;
+    margin: 10px;
+    position: relative;
+    background-color: red;
+}
+.calc1 {
+    width: calc(50% + 50px);
+}
+.calc2 {
+    width: calc(50% - 50px);
+}
+.calc3 {
+    width: calc(10% * 2);
+}
+.calc4 {
+    width: calc(50% / 2);
+}
+
+/* Using gradient radial and linear */
+
+.gradient-box{
+    width: 500px;
+    height: 200px;
+    position: relative;
+    margin: 20px;
+    color: #fff;
+
+}
+.gradient1{
+    background-image: linear-gradient(purple, blue);
+}
+.gradient2{
+    background-image: linear-gradient(to right, purple, blueviolet);
+}
+.gradient3{
+    color: #111;
+    background-image: linear-gradient(to left,orangered, greenyellow);
+}
+.gradient4{
+    color: #111;
+    background-image: linear-gradient(to top, pink, lightblue);
+}
+.gradient5{
+    background-image: linear-gradient( to top right, green, blue, red);
+}
+.gradient6{
+    background-image: linear-gradient(purple, blue, yellow, red);
+}
+.gradient7{
+    background-image: radial-gradient(#3a3042, #db9d47, #ff784f);
+}
+.gradient8{
+    background-image: radial-gradient(#3a3042 30%, #db9d47 20%, #ff784f 50%);
+}
+.gradient9{
+    background-image: radial-gradient(circle, purple, blue, yellow, red);
+}
+
+/* Using fonts */
+
+@font-face {
+    font-family: "Lage_Grafica";
+    src: url(fonts/lage_grafica.ttf);
+}
+.font_test {
+    font-family: "Lage_Grafica";
+}
+
+/* Media query */
+
+.mediaquery {
+    height: 200px;
+    width: 1200px;
+    background-color: aqua;
+}
+
+@media (max-width: 1000px){
+    .mediaquery {
+        width: 500px;
+        background-color: antiquewhite;
+    }
+}
+
+/* Border radius */
+
+.div-border {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    background-color: plum;
+}
+.border-radius1{
+    border-radius: 50%;
+}
+.border-radius2{
+    border-top-right-radius: 16px ;
+    border-bottom-left-radius: 8px;
+}

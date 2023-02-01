@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styles_flex_box.css">
+    <title>Hello World Html</title>
+</head>
+<body>
+    <article>
+     
+        <h1> Example os resources of HTML 5</h1>
+        <div>
+            <video width="320" height="240" controls>
+                <source src="1_HTML5\video\cidade.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div>
+            <audio controls>
+                <source src="1_HTML5\audio\music_perfect.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+        <div>
+            <figure>
+                <img src="1_HTML5\img\ricefield.jpg" alt="Campo de arroz">
+                <figcaption> A beautiful rice field</figcaption>
+            </figure>
+        </div>
+        <div>
+            <h3>Subscribe to newsletter!</h3>
+            <form>
+                <input type="email" name="email" required placeholder="Digit your email..." autofocus>
+                <input type="text" name="name" required placeholder="Digit name...">
+                <input type="submit" name="Submit">
+            </form>
+        </div>
+        <div >
+            <p contenteditable="true">This p can be changed </p>
+        </div>
+        <aside>
+            <p>Look my github, <a href="https://github.com/rafaelholder" target="_blank"> Go to Github!</a></p>
+        </aside>
+        <details open="open">
+            <summary> Dog </summary>
+            <p>A good option to companion</p>
+        </details>
+        
+        <form>
+            <p>Animals:</p>
+            <input list="animals" name="animals" placeholder="Search animal">
+            <datalist id="animals">
+                <option value="Dog"></option>
+                <option value="Cat"></option>
+                <option value="Wolf"></option>
+                <option value="Bird"></option>
+            </datalist>
+        </form>
+        
+        <p>Loading...</p>
+        <progress value="6" max="100"></progress>
+        <footer>
+            <p>Footer end article_tag</p>
+        </footer>
+    
+    </article>
+
+    <article>
+        <h1>---Example of resources of CSS 3---</h1>
+    
+         <h3>Using animations, hover, transition:</h3>
+        <div class="animation-div"> <h1>oi</h1></div>
+        <div class="animation-div-second"> <h1>oi 2</h1></div>
+        <div class="animation-div-third"> <h1>oi 2</h1></div>
+        <div class="box" id="animation-div4">linear</div>
+        <div class="box" id="animation-div5">ease</div>
+        <div class="box" id="animation-div6">ease-in</div>
+        <div class="box" id="animation-div7">ease-out</div>
+        <div class="box" id="animation-div8">ease-in-out</div>
+        <div class="box" id="animation-div9">shorthand</div>
+        <button class="btn">Submit</button>
+        <div class="transition"></div>
+    
+    
+        <h3>Use Calc(): </h3>
+        <div class="div-calc">
+            <div class="innerdiv-calc calc1">Div using: 300px(50% + 50px)</div>
+            <div class="innerdiv-calc calc2">Div using: 200px(50% - 50px)</div>
+            <div class="innerdiv-calc calc3">Div using: 50px(10% * 2)</div>
+            <div class="innerdiv-calc calc4">Div using: 75px(50% / 2)</div>
+        </div>
+
+    
+        <h3>Using Gradients:<h3>
+        <div class="gradient-box gradient1">Linear gradient vanilla using 2 colors</div>
+        <div class="gradient-box gradient2">Linear gradient to right using 2 colors</div>
+        <div class="gradient-box gradient3">Linear gradient to left using 2 colors</div>
+        <div class="gradient-box gradient4">Linear gradient to top using 2 colors</div>
+        <div class="gradient-box gradient5">Linear gradient to top right using 3 colors</div>
+        <div class="gradient-box gradient7">Radial gradient using 2 colors hexadecimal</div>
+        <div class="gradient-box gradient8">Radial gradient using 3 colors with percentages</div>
+        <div class="gradient-box gradient9">Radial gradient using 4 colors and circle </div>
+    
+             
+        <h1 class="font_test">This font came from a external link</h1>
+    
+    
+         <h3>Using mediaQuery:</h3>
+        <div class="mediaquery"></div> 
+   
+        <h3>Using border-radius:</h3>
+        <div class="div-border border-radius1"></div>
+        <div class="div-border border-radius2"></div>
+
+    </article>
+    
+    <article>
+        <h3>Using flexbox: </h3>
+        <div class="container_flexbox">
+            <div class="flexbox first">1</div>
+		    <div class="flexbox second">2</div>
+		    <div class="flexbox third">3</div>
+		    <div class="flexbox third">4</div>
+		    <div class="flexbox third">5</div>
+        </div>
+    </article>
+
+</body>
+</html>

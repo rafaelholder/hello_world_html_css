@@ -1,0 +1,113 @@
+html, body, ul {
+    background-color: dimgray;
+	margin: 0;
+	padding: 0;
+	font-family: 'Merriweather Sans', sans-serif;
+}
+
+.container-principal {
+    text-align: center;
+    width: 60%;
+    float: right;
+    display: flex;
+    flex-direction: row;
+    margin: 12px;
+    padding: 8px;
+    border-radius: 16px;
+    border: 1px solid black;
+}
+
+
+
+
+
+
+.container-aside {
+    width: 30%;
+    float: left;
+    display: flex;
+    
+    flex-direction: column;
+	position: relative;
+    margin: 12px;
+    padding: 8px;
+    border-radius: 16px;
+    border: 1px solid black;
+}
+
+.profile{
+    justify-content: center;
+    border: 1px solid rgb(124, 0, 248);
+    border-radius: 32px;
+    color: rgb(153, 255, 0);  
+}
+.profile h3{
+    align-items: center;
+    margin: 16px;
+    justify-content: center;
+      
+}
+.profile p{
+    align-items: center;
+    margin: 16px;
+    justify-content: center;
+     
+}
+.img {
+    margin: 12px;
+    justify-content: center;
+    border: 3px solid rgb(153, 255, 0);
+    border-radius: 50%;
+    width: 160px;
+}
+
+.contact{
+    margin-top:12px ;
+    margin-bottom: 12px;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 16px;
+}
+.contact-li{
+    margin: 1px; 
+    padding: 4px;
+    border: 1px  ;
+    color: aliceblue;
+    text-align: left;
+    list-style-type: none;   
+}
+.tecnologias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 12px;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 16px; 
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    margin: 1px; 
+    padding: 4px;
+    border: 1px  ;
+    text-align: left;
+    list-style-type: none;
+}
+.row h3 {
+    color: azure;
+    background-color: purple;
+    border: 1px solid ;
+    border-radius: 8px;
+    padding: 12px;
+    margin: 12px;
+}
+.row h3:hover {
+    color: black;
+    background-color: greenyellow;
+    transition: 0.5s;
+    
+}
+
+
+

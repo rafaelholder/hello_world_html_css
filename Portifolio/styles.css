@@ -1,8 +1,25 @@
+*{
+    --background: #22212C;
+    --text-primary: #837E9F;
+    --text-secondary: #CB92B1;
+    --primary: #CB92B1;
+    --secondary: #c6e5b1; 
+
+    --bg-cards: #302F3D;
+    
+    font-family: 'Ubuntu', 'Roboto', sans-serif;
+}
+
 html, body, ul {
-    background-color: dimgray;
+    background-color: var(--background);
 	margin: 0;
 	padding: 0;
 	font-family: 'Merriweather Sans', sans-serif;
+}
+
+.principal{
+    display: flex;
+    flex-direction: row;
 }
 
 .container-principal {
@@ -10,82 +27,233 @@ html, body, ul {
     width: 60%;
     float: right;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin: 12px;
-    padding: 8px;
+    padding: 16px;
     border-radius: 16px;
-    border: 1px solid black;
+    background-color: var(--background);
+    border: none;
+}
+
+/* my projects and github linking */
+.my-projects{
+    background-color:var(--bg-cards);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 16px;
+    padding: 8px 16px;
+    color: var(--text-primary);
+}
+.my-projects a{
+    border-radius: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+    text-decoration: none;
+    color: var(--secondary);
+    transition: 1.2s;
+}
+.my-projects a:hover{
+    background-color: var(--background);
+}
+
+
+/* Showing projects */
+.container-recent-projects{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 18px;
+    color: var(--text-primary);
+}
+
+.recent-projects{
+    display: flex;
+    flex-direction: row;
+    width: 45%;
+    background-color: var(--bg-cards);
+    padding: 12px;
+    margin-right: 2px;
+    margin-left: 2px;
+    border-radius: 12px;
+}
+.recent-projects img{
+    color: #837E9F;
+    filter: invert(50%) ;
+}
+.recent-projects h4, a{
+    text-decoration: none;
+    color: var(--text-primary);
+    margin-left: 12px;
+    padding: 2px;
+    transition: 1.2s;
+}
+.recent-projects a:hover{
+    border-radius: 4px;
+    background-color: var(--background);
 }
 
 
 
+/* Recent posts title container */
+.new-posts-title{
+    background-color:var(--bg-cards);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 12px;
+    padding: 4px 16px;
+    margin-top: 32px;
+    color: var(--secondary);
+    font-size: 16px;
+    text-transform: uppercase;
+    justify-content: center;
+}
+
+/* Recents Posts containerl, img and content */
+.recent-posts{
+    height: 30%;
+    margin-top: 24px;
+    padding: 12px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 12px;
+    background-color: var(--bg-cards);
+    justify-content: flex-start;
+}
+
+.recent-posts img{
+    border-radius: 50%;
+    height: 40%;
+    border: 2px solid var(--text-primary);
+}
+
+.recent-posts-text{
+    width: 70%;
+    text-align: left;
+    color: var(--text-primary);
+    padding: 8px;
+    margin-left: 10px;
+    border-radius: 6px;
+}
+.recent-posts-text h3{ /* title format */
+    background-color: var(--background);
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.recent-posts-text p{ /* date format */
+    margin-top: 18px;
+    font-size: 13px;
+}
+.recent-posts-text h4{
+    padding: 8px;
+    background-color: var(--background);
+    width: 80%;
+    border-radius: 18px;
+    font-size: 13px;
+}
 
 
 
+/* CONTAINER LATERAL */
 .container-aside {
     width: 30%;
     float: left;
     display: flex;
-    
     flex-direction: column;
 	position: relative;
     margin: 12px;
-    padding: 8px;
+    padding: 16px;
     border-radius: 16px;
-    border: 1px solid black;
 }
 
+/* PROFILE PICTURE */
 .profile{
     justify-content: center;
-    border: 1px solid rgb(124, 0, 248);
-    border-radius: 32px;
-    color: rgb(153, 255, 0);  
+    border-radius: 16px;
+    padding: 4px;
+    color: #c6e5b1;  
+    background-color: var(--bg-cards);
 }
 .profile h3{
+    font-weight: 700;
     align-items: center;
     margin: 16px;
     justify-content: center;
       
 }
 .profile p{
+    font-weight: 300;
     align-items: center;
     margin: 16px;
     justify-content: center;
      
 }
-.img {
+.profile-img {
     margin: 12px;
     justify-content: center;
-    border: 3px solid rgb(153, 255, 0);
-    border-radius: 50%;
+    border: 3px solid var(--secondary);
+    border-radius: 30%;
     width: 160px;
 }
 
+/* CONTACT PAGE. Github, email, etc */
 .contact{
     margin-top:12px ;
     margin-bottom: 12px;
     padding: 8px;
-    border: 1px solid black;
+    background-color: var(--bg-cards);
+    /* border: 1px solid var(--text-secondary); */
     border-radius: 16px;
 }
+
+.contact a{
+    font-size: 16px;
+    margin: 2px;
+    padding: 6px;
+    border-radius: 8px;
+    background-color: var(--bg-cards);
+    color: var(--text-primary);
+    transition: 1.2s;
+}
+.contact a:hover{
+    color: #fff;
+    background-color: var(--background);
+    opacity: 0.7;
+}
+
 .contact-li{
+    display: flex;
+    flex-direction: row;
     margin: 1px; 
     padding: 4px;
     border: 1px  ;
     color: aliceblue;
-    text-align: left;
+    text-align: justify;
     list-style-type: none;   
 }
+.contact-li img{
+    margin-right: 6px;
+    background-color: var(--primary);
+    border-radius: 50%;
+    padding: 2px;
+    border: none;
+}
+
+/* Knows techs with github linking */
 .tecnologias {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 12px;
     padding: 8px;
-    border: 1px solid black;
-    border-radius: 16px; 
 }
+
 .row{
+    max-height: 200px;
+    max-width: 500px;
     display: flex;
     flex-direction: row;
     margin: 1px; 
@@ -95,18 +263,20 @@ html, body, ul {
     list-style-type: none;
 }
 .row h3 {
-    color: azure;
-    background-color: purple;
-    border: 1px solid ;
+    font-size: 16px;
+    text-anchor: end;
+    color: #fff;
+    background-color: var(--primary);
+    border: none;
     border-radius: 8px;
     padding: 12px;
     margin: 12px;
+    cursor: pointer;
+    transition: 1.2s;
 }
 .row h3:hover {
-    color: black;
-    background-color: greenyellow;
-    transition: 0.5s;
-    
+    font-size: 24px;
+    background-color: var(--text-primary);
 }
 
 

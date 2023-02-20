@@ -6,40 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,100;1,400&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <STYLE>a {text-decoration: none;} </STYLE>
     <title>Meu Portifolio</title>
 </head>
 
 <body> 
-    <div>
-        <div class="container-principal">
-            <section>
-                <div>
-                    <h1>My projects</h1> <h1> Veja todos</h1>
-                    
-                </div>
-            </section>
-            <section>
-                <div>
-                    <div>
-                        <h1>1</h1>
-                    </div>
-                    <div>
-    
-                    </div>
-                </div>
-            </section>
-        </div>
+    <div class="principal">
         
         <div class="container-aside">
             <ul>
                 <div class="profile"> 
                     <center>
-                        <img class="img" src="assets/test-photo.jpg" alt="">
+                        <img class="profile-img" src="assets/test-photo.jpg" alt="">
                         <h3>
                             Rafael Holder 
-                            <p> Dev </p> 
+                            <p>Dev</p> 
                         </h3>
                     </center>
                 </div>
@@ -63,44 +52,112 @@
                     </li>
                     <li class="contact-li"> 
                         <img src="assets/linkedin.svg" alt="linkedin logo">
-                        <a href=" https://www.instagram.com/rafaelholder_/" target="_blank"> Linkedin </a>
+                        <a href="https://github.com/rafaelholder" target="_blank"> Linkedin </a>
                     </li> 
                 </div>
                 <center>
                     <div class="tecnologias">
                         <li class="row"> 
-                            <h3>
-                            Flutter
-                            </h3>
-                            <h3>
-                            React
-                            </h3>
-                            <h3>
-                            Next.Js
-                            </h3>
+                            <a 
+                                href="https://github.com/rafaelholder?tab=repositories&q=Flutter&type=&language=&sort=" 
+                                target="_blank">
+                                <h3>
+                                    Flutter
+                                </h3>
+                            </a>
+                            <a 
+                                href="https://github.com/rafaelholder?tab=repositories&q=React&type=&language=&sort=" 
+                                target="_blank">
+                                <h3>
+                                    React
+                                </h3>
+                            </a>
+                            <a 
+                                href="https://github.com/rafaelholder?tab=repositories&q=Next+js&type=&language=&sort=" 
+                                target="_blank">
+                                <h3>
+                                    Next.js
+                                </h3>
+                            </a>
+                           
                         </li>
                         <li class="row"> 
+                            <a 
+                                href="https://github.com/rafaelholder?tab=repositories&q=TypeScript&type=&language=&sort=" 
+                                target="_blank">
+                                <h3>
+                                    TypeScript
+                                </h3>
+                            </a>
+                            <a 
+                                href="https://github.com/rafaelholder?tab=repositories&q=JavaScript&type=&language=&sort=" 
+                                target="_blank">
                             <h3>
-                            C 
+                                JavaScript
                             </h3>
-                            <h3>
-                            TypeScript
-                            </h3>
-                            <h3>
-                            Javascript
-                            </h3>
+                        </a>
                         </li>
                         <li class="row"> 
                         
                         </li> 
                     </div>
                 </center>
-                
-                
-                
             </ul>
         </div>
         
+
+        <div class="container-principal">
+            <div class="my-projects">
+                <h2>My projects </h2> 
+                <a href="https://github.com/rafaelholder?tab=repositories" target="_blank"> 
+                    <h2>See All</h2>
+                </a>          
+            </div>
+
+            <div class="container-recent-projects">
+                <div class="recent-projects">
+                    <img src="assets/folder.svg" alt="Folder_Img">
+                    <h4> 
+                        <a href="https://github.com/rafaelholder/API_the_movie_DB" target="_blank">
+                            Using MovieDB API
+                        </a> 
+                    </h4>
+                </div>
+                <div class="recent-projects">
+                    <img src="assets/folder.svg" alt="Folder_Img">
+                    <h4> 
+                        <a href="https://github.com/rafaelholder/TypeScript_HelloWorld" target="_blank">
+                            Basic TypeScript
+                        </a> 
+                    </h4>
+                </div>
+            </div>
+
+            <div class="new-posts-title">
+                <h1>new posts</h1>
+            </div>
+
+            <div class="recent-posts">
+                <img src="assets/test-photo.jpg" alt="">
+                <div class="recent-posts-text">
+                    <h3>
+                        titulo:
+                        <p>01/01/2023</p>
+                    </h3>
+                    <center>
+                        <h4>
+                            Aqui fica a descrição do post
+                            <br/> 
+                            <!-- br usado para quebrar linha -->
+                            <br/>
+                            #hashtags
+                        </h4>
+                    </center>
+                </div>
+            </div>
+
+        </div>
+
     </div>
     
 </body>
